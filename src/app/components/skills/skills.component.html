@@ -1,0 +1,33 @@
+<section class="skills-section section">
+  <div class="container">
+    <h2 class="section-title">Skills & Technologies</h2>
+    
+    <div class="skills-container">
+      @for (category of categories; track category) {
+        <div class="skill-category">
+          <h3>{{ getCategoryLabel(category) }}</h3>
+          <div class="skills-grid">
+            @for (skill of skillsByCategory[category]; track skill.id) {
+              <div class="skill-card fade-in">
+                @if (skill.icon) {
+                  <i [class]="skill.icon"></i>
+                }
+                <h4>{{ skill.name }}</h4>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div 
+                      class="progress" 
+                      [style.width.%]="skill.level"
+                      [style.background-color]="getProgressBarColor(skill.level)">
+                    </div>
+                  </div>
+                  <span class="level-text">{{ skill.level }}%</span>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

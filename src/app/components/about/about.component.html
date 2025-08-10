@@ -1,0 +1,24 @@
+<section class="about-section">
+  <div class="about-content">
+    <div class="about-text">
+      <h3>{{ aboutMe.name }}</h3>
+      <h4>{{ aboutMe.title }}</h4>
+      <p>{{ aboutMe.description }}</p>
+      
+      <!-- CV Download Section -->
+      <div class="cv-download-section">
+        <h5>Download My CV</h5>
+        <p>Get a detailed overview of my experience, skills, and qualifications</p>
+        <a 
+          href="{{ cvUrl }}" 
+          download="Rajesh_Sanjyal_CV.pdf"
+          class="cv-download-btn"
+          target="_blank"
+          rel="noopener noreferrer">
+          <i class="fas fa-download"></i>
+          Download CV (PDF)
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

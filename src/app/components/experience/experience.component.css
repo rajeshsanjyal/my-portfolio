@@ -1,0 +1,184 @@
+.experience-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  display: inline-block;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #007bff, transparent);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.experience-grid .experience-item {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.experience-grid .experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.experience-grid .years {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.experience-grid .area {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.professional-experience-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.professional-experience-section .experience-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.professional-experience-section .experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.experience-header {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-header h4 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header .company {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header .location,
+.experience-header .period {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.experience-header .role {
+  color: #007bff;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.responsibilities {
+  margin-bottom: 2rem;
+}
+
+.responsibilities h5,
+.technologies h5 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.responsibilities ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.responsibilities ul li {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  background-color: #e9ecef;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .professional-experience-section .experience-item {
+    padding: 1.5rem;
+  }
+  
+  .tech-tags {
+    gap: 0.5rem;
+  }
+  
+  .tech-tag {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
