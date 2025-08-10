@@ -24,50 +24,10 @@ export class PortfolioService {
       title: 'Portfolio Website',
       description: 'A responsive portfolio website built with Angular',
       technologies: ['Angular', 'TypeScript', 'SCSS'],
-      imageUrl: '/assets/images/portfolio.png',
+      imageUrl: '/assets/images/portfolio.jpg',
       githubUrl: 'https://github.com/rajeshsanjyal/my-portfolio',
       featured: true,
       category: 'frontend'
-    },
-    {
-      id: 3,
-      title: 'RESTful API Service',
-      description: 'Backend API service built with Node.js and Express.js',
-      technologies: ['Node.js', 'Express.js', 'PostgreSQL', 'Sequelize'],
-      imageUrl: '/assets/images/api-service.png',
-      githubUrl: 'https://github.com/rajeshsanjyal/api-service',
-      featured: true,
-      category: 'backend'
-    },
-    {
-      id: 4,
-      title: 'Microservices Architecture',
-      description: 'Containerized microservices using Docker and Node.js',
-      technologies: ['Node.js', 'Docker', 'PostgreSQL', 'Redis'],
-      imageUrl: '/assets/images/microservices.png',
-      githubUrl: 'https://github.com/rajeshsanjyal/microservices',
-      featured: true,
-      category: 'backend'
-    },
-    {
-      id: 5,
-      title: 'Database Management System',
-      description: 'Database operations and management with PostgreSQL',
-      technologies: ['PostgreSQL', 'Sequelize', 'Node.js', 'Express.js'],
-      imageUrl: '/assets/images/database.png',
-      githubUrl: 'https://github.com/rajeshsanjyal/database-system',
-      featured: false,
-      category: 'backend'
-    },
-    {
-      id: 6,
-      title: 'CI/CD Pipeline',
-      description: 'Automated deployment pipeline with Snowflake integration',
-      technologies: ['CI/CD', 'Snowflake', 'Docker', 'GitLab'],
-      imageUrl: '/assets/images/cicd.png',
-      githubUrl: 'https://github.com/rajeshsanjyal/cicd-pipeline',
-      featured: false,
-      category: 'backend'
     }
   ];
 
